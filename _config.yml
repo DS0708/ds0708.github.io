@@ -5,28 +5,28 @@ url: "http://www.your-domain.com" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Tyrion Lannister # Your name will go here
-  description: "A personal portfolio and blog website" # used by search engines
+  title: Covy's Portfolio # Your name will go here
+  description: "A personal portfolio" # used by search engines
 
   # Header and footer text
   header_text: >
-     <h1>Witty & Hilarious Rails Developer</h1>
-     <p>I'm a kickass developer specializing in Rails, AngularJS, and MongoDB.</p>
+     <h1>Detail-Oriented & Time-Efficient Developer with Strong Self-Management</h1>
+     <p>I'm a developer who thrives on continuous growth, with a strong focus on AWS, Kubernetes, and Cloud Native technologies.</p>
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
+   &copy; 2025 Created by Dongseong (Covy).
 
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: jonum12312@gmail.com # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
-  github: # github profile name, e.g. "madebymunsters"
+  github: https://github.com/DS0708# github profile name, e.g. "madebymunsters"
   google_plus:
-  instagram:
+  instagram: 
   linkedin:  # Full URL
   pinterest:
   reddit:
@@ -65,8 +65,12 @@ collections:
     output: true
     permalink: /portfolio/:path/
 
-# BUILD SETTINGS
+# 추가 설정
+timezone: Asia/Seoul
+encoding: utf-8
 markdown: kramdown
+mermaid: true
+
 
 sass:
   sass_dir: _sass
