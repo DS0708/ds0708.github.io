@@ -7,7 +7,11 @@ feature-img: "img/color.png"
 
 
 
-![header](https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=header&fontSize=90)
+
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=header&fontSize=90" alt="header"/>
+</div>
 
 <div align="center">
 
@@ -59,4 +63,6 @@ feature-img: "img/color.png"
 
 <br/>
 
-![footer](https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=footer&fontSize=90)
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=footer&fontSize=90" alt="footer"/>
+</div>
