@@ -13,8 +13,9 @@ feature-img: "img/color.png"
 
 <p>
   Hello, I'm Dongseong (Covy).<br/>
-  I'm a detail-oriented and time-efficient developer with strong self-management skills.<br/>
-  I thrive on continuous growth, with a strong focus on AWS, Kubernetes, and Cloud Native technologies.<br/>
+  I'm a developer with a keen interest in cloud native technologies.<br/>
+  I am continuously growing through time management and self-discipline.<br/>
+  Curious about my methods? Check out my <a href="https://github.com/DS0708/todo-list">GitHub</a>.<br/>
   Thank you for visiting my page!
 </p>
 
