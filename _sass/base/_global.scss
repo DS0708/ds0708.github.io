@@ -127,12 +127,13 @@ img[align=right] {
   margin-left: 3%;
 }
 
-code {
+code { //백틱
   font-family: "Courier New", Courier, monospace;
-  background-color: #f0f0f0; // 더 밝은 배경색
-  color: #d63384; // 글자색을 변경하여 가독성 향상
+  background-color: #f0f0f0; // 배경색
+  color: #d63384; // 글자색은 빨간색
   padding: 0.2em 0.4em;
   border-radius: 3px;
+  font-weight: bold; // 글자를 굵게
 }
 
 pre {
