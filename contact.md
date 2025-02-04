@@ -14,10 +14,18 @@ feature-img: "img/color.png"
   <input type='submit' value='Send Message' />
 </form> -->
 
-
+{:.center} 
 If you would like to get in touch, feel free to reach out through the following channels:
 
-- **GitHub**: [DS0708](https://github.com/DS0708)
-- **Email**: [jonum12312@gmail.com](mailto:jonum12312@gmail.com)
+<br>
 
+{:.center} 
+**Email**: [jonum12312@gmail.com](mailto:jonum12312@gmail.com)
+
+{:.center} 
+**GitHub**: [DS0708](https://github.com/DS0708)
+
+<br>
+
+{:.center} 
 I look forward to connecting with you! Any feedback is welcome and appreciated.

@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/ (optional)
-url: "http://www.your-domain.com" # the base hostname & protocol for your site
+url: "https://portfolio.covyshin.kr" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -10,8 +10,8 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-    <h1>Detail-Oriented Developer with Time Management and Self-Discipline</h1>
-    <p>I'm a developer who thrives on continuous growth, with a strong focus on Cloud Native technologies.</p>
+    <h1>Developer with a Keen Interest in Cloud Native Technologies</h1>
+    <p>I believe that everyone knows the road to success, but not everyone can embark on the journey.</p>
   header_text_feature_image:
   footer_text: >
    &copy; 2025 Created by Dongseong (Covy).
