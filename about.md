@@ -16,11 +16,11 @@ feature-img: "img/color.png"
 <div align="center">
 
 <p>
-  Hello, I'm Dongseong (Covy).<br/>
-  I'm a developer with a keen interest in cloud native technologies.<br/>
-  I am continuously growing through time management and self-discipline.<br/>
-  Curious about my methods? Check out my <a href="https://github.com/DS0708/todo-list">GitHub</a>.<br/>
-  Thank you for visiting my page!
+  <strong>Hello, I'm Dongseong (Covy).</strong><br/>
+  <strong>I'm a developer with a keen interest in cloud native technologies.</strong><br/>
+  <strong>I am continuously growing through time management and self-discipline.</strong><br/>
+  <strong>Curious about my methods? Check out my <a href="https://github.com/DS0708/todo-list">GitHub</a>.</strong><br/>
+  <strong>Thank you for visiting my page!</strong>
 </p>
 
 <br/>
