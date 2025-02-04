@@ -91,6 +91,15 @@ p, ol, ul, dl, .math-display {
 }
 ol, ul {
   list-style-position: inside;
+  padding-left: 20px; // 리스트 항목의 들여쓰기
+  margin-bottom: 1em; // 리스트와 다른 요소 간의 간격
+}
+li {
+  margin-bottom: 0.5em; // 리스트 항목 간의 간격
+}
+li > ul, li > ol {
+  margin-top: 0.5em; // 중첩된 리스트의 위쪽 간격
+  margin-bottom: 0.5em; // 중첩된 리스트의 아래쪽 간격
 }
 hr {
   border: 0;
@@ -116,4 +125,28 @@ img[align=left] {
 }
 img[align=right] {
   margin-left: 3%;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f0f0f0; // 더 밝은 배경색
+  color: #d63384; // 글자색을 변경하여 가독성 향상
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f5f5f5;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 4px solid #0070BB; // 인용문 왼쪽에 파란색 선 추가
+  background-color: #f9f9f9; // 인용문 배경색
+  padding: 1em;
+  margin: 1em 0;
+  color: #555; // 인용문 글자색
 }
