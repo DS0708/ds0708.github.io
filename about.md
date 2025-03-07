@@ -15,6 +15,8 @@ feature-img: "img/color.png"
 
 <div align="center">
 
+<img src="/img/me.jpg" alt="Profile Picture" style="border-radius: 10%; width: 250px; height: 300px; object-fit: cover; margin: 20px 0;"/>
+
 <p>
   <strong>Hello, I'm Dongseong (Covy).</strong><br/>
   <strong>I'm a developer with a keen interest in cloud native technologies.</strong><br/>
