@@ -6,7 +6,7 @@ short-description: Kubernetes-based Cloud Native Application
 
 ---
 
-**안녕하세요, 귀한 시간 내주셔서 정말 감사드립니다.** 이번 프로젝트에서는 **쿠버네티스 기반 클라우드 네이티브 애플리케이션**을 소개해 드리려 합니다.
+**안녕하세요, 귀한 시간 내주셔서 정말 감사드립니다.** 이번 프로젝트에서는 **MSA(Micro Service Architecture) 기반 클라우드 네이티브 애플리케이션**을 소개해 드리려 합니다.
 이 프로젝트에서 **중점적으로 강조하고 싶은 것은 기술적인 역량**이며, 아래와 같은 순서로 설명하겠습니다.:
 
 - [`1.Project Overview`](#-1-project-overview): 프로젝트에 대한 전반적인 소개
@@ -24,7 +24,7 @@ short-description: Kubernetes-based Cloud Native Application
 
 ## 📌 **1. Project Overview**
 
-ZipBob은 **쿠버네티스 기반 클라우드 네이티브 백엔드 시스템으로 구현된 프로젝트**입니다. **초기에는 프론트엔드와 백엔드를 모두 포함하는 풀스택 프로젝트로 기획**되었으나, 프로젝트 진행 중 **프론트엔드 개발자의 이탈**로 인해 불가피하게 **백엔드 시스템 구현에만 집중**하게 되었습니다. **한정된 프로젝트 기간** 내에서 최선의 결과물을 만들기 위해, 팀원들과 협의하여 **프론트엔드를 새로 개발하기보다는 백엔드 시스템의 완성도에 중점을 두기로** 결정하였습니다. **이 점 유의하여서 봐주시면 정말 감사하겠습니다.**
+ZipBob은 **MSA(Micro Service Architecture) 기반 클라우드 네이티브 백엔드 시스템으로 구현된 프로젝트**입니다. **초기에는 프론트엔드와 백엔드를 모두 포함하는 풀스택 프로젝트로 기획**되었으나, 프로젝트 진행 중 **프론트엔드 개발자의 이탈**로 인해 불가피하게 **백엔드 시스템 구현에만 집중**하게 되었습니다. **한정된 프로젝트 기간** 내에서 최선의 결과물을 만들기 위해, 팀원들과 협의하여 **프론트엔드를 새로 개발하기보다는 백엔드 시스템의 완성도에 중점을 두기로** 결정하였습니다. **이 점 유의하여서 봐주시면 정말 감사하겠습니다.**
 
 <br>
 
@@ -34,7 +34,7 @@ ZipBob은 **쿠버네티스 기반 클라우드 네이티브 백엔드 시스템
 <br>
 
 ### **1.2 프로젝트 목표**
-- 레시피 추천 서비스를 위한 **Cloud Native Application 구현**
+- 레시피 추천 서비스를 위한 **MSA 기반 Cloud Native Application 구현**
 - **쿠버네티스 기반 애플리케이션** 구축
 - **CI/CD, 모니터링, 로깅을 포함한 DevOps** 환경 구성
 - RAG 기반 레시피 추천
@@ -168,14 +168,14 @@ ZipBob은 **쿠버네티스 기반 클라우드 네이티브 백엔드 시스템
 - [**`2.4 Recipe Review Service`**](#24-recipe-review-service)
 
 **프로젝트 진행 방식은 다음과 같습니다:**
-- 쿠버네티스 기반 클라우드 네이티브 아키텍처를 **주도적으로 설계**하여, **백엔드 개발자의 피드백을 반영하여 실현할 수 있는 아키텍처를 설계**
+- MSA 기반 클라우드 네이티브 아키텍처를 **주도적으로 설계**하여, **백엔드 개발자의 피드백을 반영하여 실현할 수 있는 아키텍처를 설계**
 - **개발 및 서비스 운영에 필요한 모든 인프라를 구축**하고 해당 환경에 **전체 애플리케이션의 배포**
 - 백엔드 개발에서는 **Ingredients Manage Service를 참고**하여 **Recipe Review Service를 개발**
 
 <br>
 
 ### **2.1 System Architecture**
-이번 프로젝트에서는 **서비스 기반 아키텍처(SBA, Service-Based Architecture)**를 채택했습니다. 이는 **Cloud Native Application의 주요 특성인 확장성(Scalability), 느슨한 결합(Loose Coupling), 관리 용이성(Maintainability), 복원력(Resilience)을 고려**하여 결정했습니다.
+이번 프로젝트에서는 **MSA(Micro Service Architecture)**를 채택했습니다. 이는 **Cloud Native Application의 주요 특성인 확장성(Scalability), 느슨한 결합(Loose Coupling), 관리 용이성(Maintainability), 복원력(Resilience)을 고려**하여 결정했습니다.
 
 이를 바탕으로 ZipBob의 백엔드 시스템을 **여러 개의 독립적인 서비스**로 나누고, **각 서비스의 구조와 서비스 간 상호작용을 설계**했습니다. 이어지는 **[`2.2 Deployment Architecture`](#22-deployment-architecture) 섹션에서는 클라우드 내의 쿠버네티스 클러스터 환경에서 실제로 이 시스템 아키텍처를 어떻게 구축**했는지 설명하겠습니다.
 
@@ -328,7 +328,7 @@ ZipBob 백엔드 시스템은 **총 5개의 서비스**로 구성되어 있으�
 
 
 #### **2.1.6 Configuration Management**
-클라우드 네이티브 애플리케이션을 구축하기 위해 **서비스 기반 아키텍처(Service-Based Architecture)**를 채택하였고, 각 서비스의 설정 파일을 관리하기 위해 **설정 외부화 패턴(configuration externalization pattern)**을 고려하게 되었습니다. 
+클라우드 네이티브 애플리케이션을 구축하기 위해 **MSA(Micro Service Architecture)**를 채택하였고, 각 서비스의 설정 파일을 관리하기 위해 **설정 외부화 패턴(configuration externalization pattern)**을 고려하게 되었습니다. 
 
 
 먼저 **설정 파일을 외부화하지 않았을 경우 발생하는 문제점**은 다음과 같습니다:
@@ -611,7 +611,7 @@ Edge Service, Ingredients Manage Service, Recipe Review Service에서 사용하�
 
 위 그림과 같이 **Fluentd를 DaemonSet으로 배포하여 각 노드의 컨테이너 로그를 수집**하였고, 이를 **Elasticsearch에 전달하여 저장 및 인덱싱**하는 구조로 구축하였습니다. 실제 구현은 Elastic과 Fluentd의 Helm Repo에서 제공하는 Helm 차트를 활용하여 배포했으며, **수집된 로그 데이터는 Kibana의 웹 인터페이스를 통해 `fluetd-*` 인덱스 패턴을 생성하여 시각화**하였습니다. 
 
-**EFK 스택을 선택한 이유**는 크게 두 가지입니다. 먼저 **EFK 스택과 PLG(Promtail, Loki, Grafana) 스택을 비교**했습니다. **PLG 스택은 라벨 기반의 단순한 로그 검색 구조로 모놀리식 아키텍처에 최적화**되어 있습니다. 반면 **EFK 스택은 Elasticsearch의 전체 텍스트 검색 기능과 복잡한 쿼리를 지원하여 여러 서비스의 로그를 효과적으로 검색하고 분석할 수 있어 MSA(Microservice Architecture)나 SBA(Service-Based Architecture)에 최적화**되어 있습니다. **저희 프로젝트는 여러 개의 서비스를 운영하는 SBA(Service-Based Architecture)를 채택했기 때문에, Loki보다는 Elasticsearch를 활용하는 것이 적절**하다고 생각했습니다. **또한 ELK(Elasticsearch, Logstash, Kibana) 스택**대신 EFK를 선택하였습니다. 저희 프로젝트는 **여러 개의 서비스 로그를 수집하고 검색하는 기본적인 기능만 필요**했기 때문에, **Logstash보다는 리소스 사용량이 적고 가벼운 Fluentd가 더 적합**하다고 판단했습니다.
+**EFK 스택을 선택한 이유**는 크게 두 가지입니다. 먼저 **EFK 스택과 PLG(Promtail, Loki, Grafana) 스택을 비교**했습니다. **PLG 스택은 라벨 기반의 단순한 로그 검색 구조로 모놀리식 아키텍처에 최적화**되어 있습니다. 반면 **EFK 스택은 Elasticsearch의 전체 텍스트 검색 기능과 복잡한 쿼리를 지원하여 여러 서비스의 로그를 효과적으로 검색하고 분석할 수 있어 MSA(Micro Service Architecture)에 최적화**되어 있습니다. **저희 프로젝트는 여러 개의 서비스를 운영하는 MSA(Micro Service Architecture)를 채택했기 때문에, Loki보다는 Elasticsearch를 활용하는 것이 적절**하다고 생각했습니다. **또한 ELK(Elasticsearch, Logstash, Kibana) 스택**대신 EFK를 선택하였습니다. 저희 프로젝트는 **여러 개의 서비스 로그를 수집하고 검색하는 기본적인 기능만 필요**했기 때문에, **Logstash보다는 리소스 사용량이 적고 가벼운 Fluentd가 더 적합**하다고 판단했습니다.
 
 **실제 운영 환경에서 EFK 스택을 효과적으로 활용하기 위해서는 아직 많이 부족합니다.** 로그 검색을 효율적으로 하기 위해 **Elasticsearch의 Query DSL**도 공부해야 하며, 로그 데이터가 증가할 경우를 대비해 Elasticsearch의 **HPA(Horizontal Pod Autoscaler)** 구성 방법도 알아야 합니다. 이 부분은 제가 **앞으로 더 공부**해야 한다고 생각합니다.
 
@@ -647,7 +647,7 @@ Recipe Review Service는 MongoDB를 데이터베이스로 사용하여 레시피
 
 무엇보다도 팀원 구성이 정말 좋았습니다. **뛰어난 백엔드 개발자분이 계셔서 제가 설계한 내용을 빠르게 구현해 주셨고, 덕분에 인프라를 구축하는 데 더 집중할 수 있었습니다.** 또한 **중간에 프론트엔드 개발자분이 빠지게 되었지만, 오히려 이를 계기로 백엔드 시스템 전반에 더 집중할 수 있었습니다.**
 
-서비스 기반 아키텍처를 직접 설계하고 쿠버네티스에 배포하기까지의 모든 과정을 경험할 수 있었고, **제가 작성한 코드와 설계한 시스템이 실제로 구현된 코드가 남아있어서 나중에 실무에서도 많은 도움이 될 것 같습니다.**
+MSA(Micro Service Architecture)를 직접 설계하고 쿠버네티스에 배포하기까지의 모든 과정을 경험할 수 있었고, **제가 작성한 코드와 설계한 시스템이 실제로 구현된 코드가 남아있어서 나중에 실무에서도 많은 도움이 될 것 같습니다.
 
 
 ### **Learned (배운 점)**
